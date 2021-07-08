@@ -12,9 +12,11 @@ function App() {
 
       <Router>
         <Switch>
+
           <Route path="/" exact>
             <Home />
           </Route>
+
           <Route path="/login">
             <Login />
           </Route>
@@ -22,13 +24,13 @@ function App() {
           <Route path="/gracias">
             <Gracias />
           </Route>
+
           <Route path="/upss">
             <FailRegistro />
 
           </Route>
-          <Route>
-            <Error />
-          </Route>
+
+          
 
         </Switch>
 

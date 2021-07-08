@@ -13,11 +13,11 @@ function App() {
       <Router>
         <Switch>
           
-          <Route path="/" exact>
+          <Route path="/" exact >
             <Home />
           </Route>
 
-          <Route path="/login">
+          <Route path="/login" >
             <Login />
           </Route>
 
@@ -29,11 +29,11 @@ function App() {
             <FailRegistro />
           </Route>
 
-          <Route>
-            <Error/>
-          </Route>
+          
+          <Route component={Error}/>  
 
         </Switch>
+       
 
       </Router>
     </div>

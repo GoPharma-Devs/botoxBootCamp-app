@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/static/css/main.6fe49b8e.chunk.css",
-    "main.js": "/static/js/main.da1b53ed.chunk.js",
-    "main.js.map": "/static/js/main.da1b53ed.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.a8d78e4f.js",
-    "runtime-main.js.map": "/static/js/runtime-main.a8d78e4f.js.map",
-    "static/js/2.b9b5f067.chunk.js": "/static/js/2.b9b5f067.chunk.js",
-    "static/js/2.b9b5f067.chunk.js.map": "/static/js/2.b9b5f067.chunk.js.map",
-    "static/js/3.45579511.chunk.js": "/static/js/3.45579511.chunk.js",
-    "static/js/3.45579511.chunk.js.map": "/static/js/3.45579511.chunk.js.map",
-    "index.html": "/index.html",
-    "static/css/main.6fe49b8e.chunk.css.map": "/static/css/main.6fe49b8e.chunk.css.map",
-    "static/js/2.b9b5f067.chunk.js.LICENSE.txt": "/static/js/2.b9b5f067.chunk.js.LICENSE.txt",
-    "static/media/index.scss": "/static/media/bg-purple.42b554fb.png",
-    "static/media/logo.3512db84.png": "/static/media/logo.3512db84.png"
+    "main.css": "/botoxBootCamp-app/static/css/main.f89de903.chunk.css",
+    "main.js": "/botoxBootCamp-app/static/js/main.da1b53ed.chunk.js",
+    "main.js.map": "/botoxBootCamp-app/static/js/main.da1b53ed.chunk.js.map",
+    "runtime-main.js": "/botoxBootCamp-app/static/js/runtime-main.be0e2426.js",
+    "runtime-main.js.map": "/botoxBootCamp-app/static/js/runtime-main.be0e2426.js.map",
+    "static/js/2.b9b5f067.chunk.js": "/botoxBootCamp-app/static/js/2.b9b5f067.chunk.js",
+    "static/js/2.b9b5f067.chunk.js.map": "/botoxBootCamp-app/static/js/2.b9b5f067.chunk.js.map",
+    "static/js/3.45579511.chunk.js": "/botoxBootCamp-app/static/js/3.45579511.chunk.js",
+    "static/js/3.45579511.chunk.js.map": "/botoxBootCamp-app/static/js/3.45579511.chunk.js.map",
+    "index.html": "/botoxBootCamp-app/index.html",
+    "static/css/main.f89de903.chunk.css.map": "/botoxBootCamp-app/static/css/main.f89de903.chunk.css.map",
+    "static/js/2.b9b5f067.chunk.js.LICENSE.txt": "/botoxBootCamp-app/static/js/2.b9b5f067.chunk.js.LICENSE.txt",
+    "static/media/index.scss": "/botoxBootCamp-app/static/media/bg-purple.42b554fb.png",
+    "static/media/logo.3512db84.png": "/botoxBootCamp-app/static/media/logo.3512db84.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.a8d78e4f.js",
+    "static/js/runtime-main.be0e2426.js",
     "static/js/2.b9b5f067.chunk.js",
-    "static/css/main.6fe49b8e.chunk.css",
+    "static/css/main.f89de903.chunk.css",
     "static/js/main.da1b53ed.chunk.js"
   ]
 }

@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/botoxbootcamp-app/static/css/main.3188c6d4.chunk.css",
-    "main.js": "/botoxbootcamp-app/static/js/main.2fbe24cc.chunk.js",
-    "main.js.map": "/botoxbootcamp-app/static/js/main.2fbe24cc.chunk.js.map",
+    "main.js": "/botoxbootcamp-app/static/js/main.da1b53ed.chunk.js",
+    "main.js.map": "/botoxbootcamp-app/static/js/main.da1b53ed.chunk.js.map",
     "runtime-main.js": "/botoxbootcamp-app/static/js/runtime-main.ef0edb81.js",
     "runtime-main.js.map": "/botoxbootcamp-app/static/js/runtime-main.ef0edb81.js.map",
     "static/js/2.b9b5f067.chunk.js": "/botoxbootcamp-app/static/js/2.b9b5f067.chunk.js",
@@ -19,6 +19,6 @@
     "static/js/runtime-main.ef0edb81.js",
     "static/js/2.b9b5f067.chunk.js",
     "static/css/main.3188c6d4.chunk.css",
-    "static/js/main.2fbe24cc.chunk.js"
+    "static/js/main.da1b53ed.chunk.js"
   ]
 }

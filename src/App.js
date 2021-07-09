@@ -17,7 +17,7 @@ function App() {
             <Home />
           </Route>
 
-          <Route path="/login">
+          <Route path="/login" >
             <Login />
           </Route>
 
@@ -35,6 +35,7 @@ function App() {
           </Route>
 
         </Switch>
+       
 
       </Router>
     </div>

@@ -13,7 +13,7 @@ function App() {
       <Router>
         <Switch>
           
-          <Route path="/" exact>
+        <Route path="/" exact>
             <Home />
           </Route>
 
@@ -30,6 +30,7 @@ function App() {
           </Route>
 
           <Route>
+            <h1>error</h1>
             <Error/>
           </Route>
 

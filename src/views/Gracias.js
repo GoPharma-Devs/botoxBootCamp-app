@@ -1,12 +1,16 @@
 import React from 'react'
+import Navbar from '../components/Navbar'
 
 function Gracias() {
   return (
+   <>
+   <Navbar/>
     <section>
       <div className="contendor">
-        <h1>Gracias</h1>
+        <h1>¡GRACIAS!</h1>
       </div>
     </section>
+   </>
   )
 }
 

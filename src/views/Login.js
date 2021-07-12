@@ -2,7 +2,7 @@ import md5 from 'md5'
 import React, { Component } from "react";
 import axios from "axios";
 import Navbar from '../components/Navbar';
-const baseUrl = 'https://botoxb-be.herokuapp.com/'
+const baseUrl = 'https://botoxb-be.herokuapp.com/api/auth/login'
 
 console.log(baseUrl)
 

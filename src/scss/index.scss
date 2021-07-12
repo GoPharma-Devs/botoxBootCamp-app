@@ -208,11 +208,7 @@ flex-flow: column;
       }
     }
     @include phone {
-<<<<<<< HEAD
-      margin-top: 10rem;
-=======
-      margin-top: 8rem;
->>>>>>> front
+      margin-top: 11rem;
     }
   }
 }
@@ -250,16 +246,25 @@ flex-flow: column;
       box-shadow: 0px 0px 20px rgba(255, 208, 0, 0.747);
       height:340px;
       grid-area: primer;
+      @include phone{
+        height:280px;
+      }
     }
     .segundo-lugar{
       box-shadow: 0px 0px 20px rgba(160, 160, 160, 0.747);
       height:310px;
       grid-area: segundo;
+      @include phone{
+        height:280px;
+      }
     }
     .tercer-lugar{
       box-shadow: 0px 0px 20px rgba(150, 86, 34, 0.747);
       height:310px;
       grid-area: tercero;
+      @include phone{
+        height:280px;
+      }
     }
     .col {
       width: 270px;
@@ -306,6 +311,9 @@ flex-flow: column;
                             "tercero";
     }
   }
+  br{@include phone{
+    display:none;
+  }}
   .ranking-general {
     display: flex;
     align-items: center;
@@ -363,7 +371,9 @@ flex-flow: column;
 
    
 
-   
+   @include phone{
+     transform:scale(0.9)
+   }
   }
   .puntos-numeros {
     border-radius: 20px;

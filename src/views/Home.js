@@ -16,6 +16,7 @@ function Home() {
         <img src={Butulinica} alt="Botox-BootCamp 2021" />
         <img  src={Allergan} alt="Botox-BootCamp 2021" />
       </div>
+      <small>⚡️ Powered by Go-Pharma</small>
     </section>
   )
 }

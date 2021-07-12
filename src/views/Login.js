@@ -1,11 +1,14 @@
+import md5 from 'md5'
 import React, { Component } from "react";
 import axios from "axios";
-const baseUrl = process.env.BASEURL
+import Navbar from '../assets/Navbar';
+const baseUrl = 'https://botoxb-be.herokuapp.com/'
 
 console.log(baseUrl)
 
 
 class Login extends Component {
+
   state = {
     form: {
       email: "",
@@ -20,12 +23,25 @@ class Login extends Component {
         [e.target.name]: e.target.value,
       },
     });
+    //borrar
     console.log(this.state.form);
   }
 
+  iniciarSesion=async ()=>{
+    await axios.get(baseUrl,{params:{email:this.state.form.email,password:md5(this.state.form.password)}})
+    .then(response =>{
+      console.log(response.data)
+    })
+    .catch(error =>{
+      console.log(error);
+    })
+  }
+
+
   render() {
     return (
-      <section>
+    <>
+    <Navbar/>      <section className="login">
         <div className="contenedor-login">
           <form>
             <div className="form-grupo">
@@ -36,6 +52,7 @@ class Login extends Component {
                 id="email"
                 onChange={this.handleChange}
               />
+              
             </div>
             <br />
             <div className="form-grupo">
@@ -47,14 +64,15 @@ class Login extends Component {
                 onChange={this.handleChange}
               />
             </div>
-            <br />
-            <input type="button" value="Entrar" />
+            
+            <input className="btn-primario" type="button" value="Entrar" onClick={() => this.iniciarSesion()} />
           </form>
-          <p>url:{baseUrl}</p>
+          <small>url:{baseUrl}</small>
         </div>
        
       </section>
-    );
+    
+    </>);
   }
 }
 

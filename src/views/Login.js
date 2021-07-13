@@ -12,13 +12,15 @@ class Login extends Component {
       password: "",
       message: "",
       status: "Enviar",
+      code:""
     };
   }
 
   handleSubmit(event) {
     event.preventDefault();
     this.setState({ status: "Enviando..." });
-    this.setState({menssage:""});
+   
+
     axios({
       method: "post",
       url: "https://botoxb-be.herokuapp.com/api/auth/login",
@@ -31,14 +33,20 @@ class Login extends Component {
       if (response.data.message === "Auth succesful") {
         this.props.history.push("/ranking");
         console.log("Session Iniciada");
-
-        this.setState({ name: "", email: "", message: "", status: "Auth succesful" });
-      } else if (response.data.message === "Invalid password") {
-        this.props.history.push("/ups");
-        console.log("Error en el mensaje, porfavor intenta de nuevo");
+        const userDetails = {userName: this.state.email}
+        localStorage.setItem('userDetails', JSON.stringify(userDetails));
+console.log(userDetails)
+      } else if (response.data.code === 401) {
+        this.props.history.push("/");
+        
         
       }
       
+    })
+    .catch(function (error)
+    {
+     alert(`Favor de verificar los datos ingresado`)
+      console.log("The error is : " + error);
     });
   }
 

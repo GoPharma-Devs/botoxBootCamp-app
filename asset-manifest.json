@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/botoxbootcamp-app/static/css/main.3188c6d4.chunk.css",
-    "main.js": "/botoxbootcamp-app/static/js/main.d2f8a4d5.chunk.js",
-    "main.js.map": "/botoxbootcamp-app/static/js/main.d2f8a4d5.chunk.js.map",
-    "runtime-main.js": "/botoxbootcamp-app/static/js/runtime-main.ef0edb81.js",
-    "runtime-main.js.map": "/botoxbootcamp-app/static/js/runtime-main.ef0edb81.js.map",
-    "static/js/2.b9b5f067.chunk.js": "/botoxbootcamp-app/static/js/2.b9b5f067.chunk.js",
-    "static/js/2.b9b5f067.chunk.js.map": "/botoxbootcamp-app/static/js/2.b9b5f067.chunk.js.map",
-    "static/js/3.45579511.chunk.js": "/botoxbootcamp-app/static/js/3.45579511.chunk.js",
-    "static/js/3.45579511.chunk.js.map": "/botoxbootcamp-app/static/js/3.45579511.chunk.js.map",
-    "index.html": "/botoxbootcamp-app/index.html",
-    "static/css/main.3188c6d4.chunk.css.map": "/botoxbootcamp-app/static/css/main.3188c6d4.chunk.css.map",
-    "static/js/2.b9b5f067.chunk.js.LICENSE.txt": "/botoxbootcamp-app/static/js/2.b9b5f067.chunk.js.LICENSE.txt",
-    "static/media/index.scss": "/botoxbootcamp-app/static/media/bg-purple.42b554fb.png",
-    "static/media/logo.3512db84.png": "/botoxbootcamp-app/static/media/logo.3512db84.png"
+    "main.css": "./static/css/main.f5eb192c.chunk.css",
+    "main.js": "./static/js/main.b747fdd7.chunk.js",
+    "main.js.map": "./static/js/main.b747fdd7.chunk.js.map",
+    "runtime-main.js": "./static/js/runtime-main.fba8d242.js",
+    "runtime-main.js.map": "./static/js/runtime-main.fba8d242.js.map",
+    "static/js/2.de91b6fa.chunk.js": "./static/js/2.de91b6fa.chunk.js",
+    "static/js/2.de91b6fa.chunk.js.map": "./static/js/2.de91b6fa.chunk.js.map",
+    "static/js/3.0c6b6cf6.chunk.js": "./static/js/3.0c6b6cf6.chunk.js",
+    "static/js/3.0c6b6cf6.chunk.js.map": "./static/js/3.0c6b6cf6.chunk.js.map",
+    "index.html": "./index.html",
+    "static/css/main.f5eb192c.chunk.css.map": "./static/css/main.f5eb192c.chunk.css.map",
+    "static/js/2.de91b6fa.chunk.js.LICENSE.txt": "./static/js/2.de91b6fa.chunk.js.LICENSE.txt",
+    "static/media/index.scss": "./static/media/bg-purple.42b554fb.png",
+    "static/media/logo.3512db84.png": "./static/media/logo.3512db84.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.ef0edb81.js",
-    "static/js/2.b9b5f067.chunk.js",
-    "static/css/main.3188c6d4.chunk.css",
-    "static/js/main.d2f8a4d5.chunk.js"
+    "static/js/runtime-main.fba8d242.js",
+    "static/js/2.de91b6fa.chunk.js",
+    "static/css/main.f5eb192c.chunk.css",
+    "static/js/main.b747fdd7.chunk.js"
   ]
 }

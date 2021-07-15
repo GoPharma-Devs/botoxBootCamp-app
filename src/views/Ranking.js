@@ -1,8 +1,42 @@
-import React from 'react'
+
+import React,{useState, useEffect} from 'react'
 import Navbar from '../components/Navbar'
 import Logo from '../assets/logo.png'
+import Cookies from 'universal-cookie';
+
+import axios from "axios";
+const cookies = new Cookies();
 function Ranking() {
+ console.log( "message "+cookies.get("message"))
+ console.log( "name "+cookies.get("name"))
+
+
+
+
+
+ var config = {
+   method: 'get',
+   url: 'https://botoxb-be.herokuapp.com/api/players',
+   headers: {
+    'Content-Type': 'application/json'
+  },
+  
+ };
+ 
+ axios(config)
+ .then(function (response) {
+   console.log(JSON.stringify(response.data));
+ })
+ .catch(function (error) {
+   console.log(error);
+ });
+
+// const [nombre, setnombre] = useState(0);
+
+//const [place, setPlace] = [1,2,3]
+
   return (
+
     <>
     <Navbar/>
     <section className="ranking">
@@ -21,7 +55,7 @@ function Ranking() {
             </div>
             <div className="col primer-lugar">
               <img src={Logo} alt="" />
-            <p className="name">FS LM</p>
+            <p className="name">setnombre</p>
             <p className="place first">1st</p>
             <div className="puntos">
               <p className="puntos-numeros"> <span>XXX PUNTOS</span></p>

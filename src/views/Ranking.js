@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from "react";
+// import React, { useState, useEffect } from "react";
+import React from 'react'
 import Navbar from "../components/Navbar";
 import Logo from "../assets/logo.png";
 import Cookies from "universal-cookie";
@@ -8,7 +9,7 @@ const cookies = new Cookies();
 function Ranking() {
 
     //estado de nombre
-     const [nombre, setNombre] = useState("");
+    // const [nombre, setNombre] = useState("");
 
   //const [place, setPlace] = [1,2,3]
   console.log("message " + cookies.get("message"));
@@ -25,7 +26,7 @@ function Ranking() {
   axios(config)
     .then(function (response) {
       //console.log(JSON.stringify(response.data));
-      setNombre(JSON.stringify(...response.data))
+      //setNombre(JSON.stringify(...response.data))
       console.log(response.data)
     })
     .catch(function (error) {

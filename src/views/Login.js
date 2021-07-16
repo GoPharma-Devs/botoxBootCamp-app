@@ -3,6 +3,7 @@ import React, { Component } from "react";
 import axios from "axios";
 import { withRouter } from "react-router";
 import Cookies from 'universal-cookie';
+import Navbar from '../components/Navbar'
 const cookies = new Cookies();
 
 
@@ -74,49 +75,52 @@ class Login extends Component {
   render() {
     let buttonText = this.state.status;
     return (
+   <>
+   <Navbar />
       <section className="login">
 
-        <div className="contenedor-login">
-          <form
-            className="formulario"
-            onSubmit={this.inicioSesion.bind(this)}
+<div className="contenedor-login">
+  <form
+    className="formulario"
+    onSubmit={this.inicioSesion.bind(this)}
 
-          >
+  >
 
-            <div className="form-grupo">
-              <label> Correo: </label>
-              <input
-                placeholder="Correo electrónico"
-                type="email"
-                id="email"
-                value={this.state.email}
-                onChange={this.handleChange.bind(this)}
-                required
-              />
-            </div>
-            <div className="form-grupo">
-              <label> password: </label>
-              <input
-                placeholder="Password"
-                type="password"
-                id="password"
-                name="currrent-password"
-                value={this.state.password}
-                onChange={this.handleChange.bind(this)}
-                required
-              />
-            </div>
-
-
-            <button className="btn" type="submit">
-              {buttonText}
-            </button>
-          </form>
-        </div>
+    <div className="form-grupo">
+      <label> Correo: </label>
+      <input
+        placeholder="Correo electrónico"
+        type="email"
+        id="email"
+        value={this.state.email}
+        onChange={this.handleChange.bind(this)}
+        required
+      />
+    </div>
+    <div className="form-grupo">
+      <label> password: </label>
+      <input
+        placeholder="Password"
+        type="password"
+        id="password"
+        name="currrent-password"
+        value={this.state.password}
+        onChange={this.handleChange.bind(this)}
+        required
+      />
+    </div>
 
 
-      </section>
-    );
+    <button className="btn" type="submit">
+      {buttonText}
+    </button>
+  </form>
+</div>
+
+
+</section>
+
+   </> );
   }
 }
 

@@ -24,7 +24,7 @@ function Ranking() {
 
   axios(config)
     .then(function (response) {
-      console.log(JSON.stringify(response.data));
+      //console.log(JSON.stringify(response.data));
       setNombre(JSON.stringify(...response.data))
       console.log(response.data)
     })

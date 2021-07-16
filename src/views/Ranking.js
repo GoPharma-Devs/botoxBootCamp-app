@@ -1,4 +1,4 @@
-import React, { useState,  } from "react";
+import React from "react";
 import Navbar from "../components/Navbar";
 import Logo from "../assets/logo.png";
 import Cookies from "universal-cookie";

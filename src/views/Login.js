@@ -40,7 +40,7 @@ class Login extends Component {
        //si rebotamos dentro del mismo sitio va este
       this.props.history.push("/ranking");
        //Si redirigimos va este codigo
-       //window.location = "https://www.youtube.com/watch?v=i-5hGeqMHTY"
+       //window.location = "campus.botoxbootcamp.com.mx"
        console.log("Session Iniciada");
        var respuesta=response.data;
        cookies.set('message', respuesta.message, {path: "/"});

@@ -17,7 +17,7 @@ function Home() {
       </div>
       <button  className="btn-flotante" onClick={handleClick} ><img src={Boton} target="_self" alt="" /></button>
      
-      <div className="contenedor-patrocinadores">
+      <div className="contenedor-patrocinadores botones-l">
         <img src={Butulinica} alt="Botox-BootCamp 2021 Botox" />
         <img  src={Allergan} alt="Botox-BootCamp 2021" />
       </div>

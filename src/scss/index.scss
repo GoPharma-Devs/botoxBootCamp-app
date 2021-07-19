@@ -86,7 +86,16 @@ flex-flow: column;
 }
 
 .home {
-  
+  button{
+    position: relative;
+    bottom:-12rem;
+    cursor:pointer;
+    background-color: transparent;
+  border:none;
+  @include phone{
+    bottom: 1rem;
+  }
+  } 
   background: url("../assets/bg-purple-soldiers.png") no-repeat center fixed;
   background-size: cover;
   box-shadow: inset 0 0 30px 2px #280229;
@@ -131,7 +140,7 @@ flex-flow: column;
   align-items:center;
   justify-content:center;
   background-image: url(../assets/logo.png);
-  margin-top: 16rem;
+  
   text-decoration: none;
   font-size: 16px;
   /* Cambiar el tamaño de la tipografia */

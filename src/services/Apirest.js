@@ -1,1 +1,0 @@
-export  const Apirest = "https://botoxb-be.herokuapp.com/"

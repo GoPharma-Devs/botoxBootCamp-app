@@ -71,7 +71,6 @@ small,
   }
 }
 h1 {
-  
   text-transform: uppercase;
 }
 section {
@@ -81,7 +80,7 @@ section {
   justify-content: center;
   width: 100%;
   height: 100vh;
-flex-flow: column;
+  flex-flow: column;
   box-sizing: border-box;
 }
 
@@ -122,12 +121,10 @@ flex-flow: column;
     }
 
     @include phone {
-      
-
       img {
         max-width: 120px;
         margin-top: 5rem;
-           }
+      }
     }
   }
 
@@ -137,8 +134,8 @@ flex-flow: column;
 .btn-flotante,
 .btn-primario {
   display: flex;
-  align-items:center;
-  justify-content:center;
+  align-items: center;
+  justify-content: center;
   background-image: url(../assets/logo.png);
   
   text-decoration: none;
@@ -154,12 +151,17 @@ flex-flow: column;
   /* Borde del boton */
   letter-spacing: 2px;
   /* Espacio entre letras */
- 
+
   /* Color de fondo */
-  
+
   /* Relleno del boton */
-img{width: 100%; max-width:200px;}
-  
+  position: absolute;
+  bottom: 4rem;
+  img {
+    width: 100%;
+    max-width: 200px;
+  }
+
   transition: all 300ms ease 0ms;
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
   z-index: 99;
@@ -176,8 +178,7 @@ img{width: 100%; max-width:200px;}
 @media only screen and (max-width: 600px) {
   .btn-flotante {
     font-size: 14px;
-   margin-top: -4rem;
-   
+    margin-top: -4rem;
   }
 }
 
@@ -226,9 +227,8 @@ img{width: 100%; max-width:200px;}
 }
 
 .ranking {
-  margin-top:1rem;
+  margin-top: 1rem;
   height: auto !important;
-
 
   .contenedor {
     width: 100%;
@@ -254,38 +254,38 @@ img{width: 100%; max-width:200px;}
     align-items: center;
     justify-content: space-evenly;
     padding: 1rem;
-    .primer-lugar{
+    .primer-lugar {
       box-shadow: 0px 0px 20px rgba(255, 208, 0, 0.747);
-      height:340px;
+      height: 340px;
       grid-area: primer;
-      @include phone{
-        height:280px;
+      @include phone {
+        height: 280px;
       }
     }
-    .segundo-lugar{
+    .segundo-lugar {
       box-shadow: 0px 0px 20px rgba(160, 160, 160, 0.747);
-      height:310px;
+      height: 310px;
       grid-area: segundo;
-      @include phone{
-        height:280px;
+      @include phone {
+        height: 280px;
       }
     }
-    .tercer-lugar{
+    .tercer-lugar {
       box-shadow: 0px 0px 20px rgba(150, 86, 34, 0.747);
-      height:310px;
+      height: 310px;
       grid-area: tercero;
-      @include phone{
-        height:280px;
+      @include phone {
+        height: 280px;
       }
     }
     .col {
-      height:320px;
+      height: 320px;
       width: 100%;
-     max-width: 300px;
+      max-width: 300px;
       background-color: rgba(78, 0, 129, 0.493);
       border: 1px solid #fff;
       border-radius: 16px;
-      margin:1rem;
+      margin: 1rem;
       img {
         max-width: 150px;
         padding: 1rem;
@@ -316,27 +316,28 @@ img{width: 100%; max-width:200px;}
         color: #ffae00;
         font-size: 2rem;
       }
-
-      
     }
-    
-    @include phone{
-      display:grid;
-      grid-template-areas: "primer"
-                            "segundo"
-                            "tercero";
+
+    @include phone {
+      display: grid;
+      grid-template-areas:
+        "primer"
+        "segundo"
+        "tercero";
     }
   }
-  br{@include phone{
-    display:none;
-  }}
+  br {
+    @include phone {
+      display: none;
+    }
+  }
   .ranking-general {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
     flex-flow: column;
-    padding:1rem;
+    padding: 1rem;
     box-sizing: border-box;
     ul {
       height: auto;
@@ -357,22 +358,25 @@ img{width: 100%; max-width:200px;}
       max-width: 750px;
       margin: 0 auto 1.5rem;
 
-      .grupo{
+      .grupo {
         display: flex;
         width: 15%;
-        align-items:center;
+        align-items: center;
         justify-content: center;
-        .place{
+        .place {
           font-size: 1.5rem;
         }
-        img{
+        img {
           margin-left: 2rem;
-          max-width: 5rem}
-          @include phone {
-            img{margin-left: 15px;}
-            width: 50%;
-          align-items: space-between;
+          max-width: 5rem;
+        }
+        @include phone {
+          img {
+            margin-left: 15px;
           }
+          width: 50%;
+          align-items: space-between;
+        }
       }
       p {
         margin: 0px !important;
@@ -385,48 +389,58 @@ img{width: 100%; max-width:200px;}
       max-width: 70px;
     }
 
-   
-
-   @include phone{
-     transform:scale(0.9)
-   }
+    @include phone {
+      transform: scale(0.9);
+    }
   }
   .puntos-numeros {
     border-radius: 20px;
     background-color: #f7981d;
     color: #280229;
     padding: 0.63rem;
-  
 
     /* Color de fondo al pasar el cursor */
     box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.3);
 
-    @include phone{
-        padding:0.4rem;
-        font-size: 0.7rem;
-
-    }  }
-  @include tablet {margin-top:10rem;
-  h1{font-size:1.8rem}
-  }
-  @include phone {margin-top:5rem;
-    h1{font-size:1.8rem}
+    @include phone {
+      padding: 0.4rem;
+      font-size: 0.7rem;
     }
+  }
+  @include tablet {
+    margin-top: 10rem;
+    h1 {
+      font-size: 1.8rem;
+    }
+  }
+  @include phone {
+    margin-top: 5rem;
+    h1 {
+      font-size: 1.8rem;
+    }
+  }
 }
-.fail-registro{
- 
-
-  a{ text-decoration:none;
+.fail-registro {
+  a {
+    text-decoration: none;
     color: white;
     margin-bottom: 1rem;
   }
 }
 
-.ErrorPage{
+.ErrorPage {
   text-align: center;
   display: flex;
-align-items: center;
-
+  align-items: center;
 }
-
+button {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+}
 @import "components/Navbar";
+button{
+  cursor:pointer;
+  background-color: transparent;
+border:none;
+}

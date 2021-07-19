@@ -4,6 +4,8 @@ import Logo from '../assets/logo.png'
 import Butulinica from '../assets/butulinica.png'
 import Allergan from '../assets/allergan.png'
 import Boton from '../assets/boton.png'
+
+
 function Home() {
   const handleClick = () => {
     window.open("https://campus.botoxbootcamp.com.mx/acceso.php","_self");

@@ -19,7 +19,7 @@ function Ranking() {
 
 
   return (
-    <>
+    <React.Fragment>
       <Navbar />
       <section className="ranking">
         <div className="contenedor">
@@ -29,7 +29,7 @@ function Ranking() {
           <RankingGeneral/>
         </div>
       </section>
-    </>
+    </React.Fragment>
   );
 }
 

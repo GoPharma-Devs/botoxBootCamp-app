@@ -75,7 +75,7 @@ class Login extends Component {
   render() {
     let buttonText = this.state.status;
     return (
-   <>
+   <React.Fragment>
    <Navbar />
       <section className="login">
 
@@ -120,7 +120,7 @@ class Login extends Component {
 
 </section>
 
-   </> );
+   </React.Fragment> );
   }
 }
 

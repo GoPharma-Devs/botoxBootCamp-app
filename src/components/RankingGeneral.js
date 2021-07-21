@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-
+import Zoom from 'react-reveal/Zoom';
 import axios from "axios";
 
 function RankingGeneral() {
@@ -40,6 +40,7 @@ useEffect(() => {
 
 
   return (
+    <Zoom>
     <div className="ranking-general">
     <ul>
 
@@ -81,6 +82,7 @@ useEffect(() => {
       
     </ul>
   </div>
+  </Zoom>
   )
 }
 

@@ -3,7 +3,7 @@ import Navbar from "../components/Navbar";
 import Cookies from "universal-cookie";
 import TopTres from "../components/TopTres"
 import RankingGeneral from "../components/RankingGeneral";
-
+import Fade from 'react-reveal/Fade';
 const cookies = new Cookies();
 function Ranking() {
 
@@ -19,8 +19,10 @@ function Ranking() {
 
 
   return (
-    <React.Fragment>
+  
+      <>
       <Navbar />
+      <Fade>
       <section className="ranking">
         <div className="contenedor">
         {/* TopTres */}
@@ -29,7 +31,8 @@ function Ranking() {
           <RankingGeneral/>
         </div>
       </section>
-    </React.Fragment>
+    </Fade>
+      </>
   );
 }
 

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import UserIconTop from "../assets/usericon.png";
+
 import axios from "axios";
 
 function TopTres() {
@@ -16,7 +16,7 @@ function TopTres() {
     var config = {
       method: "get",
       //la consulta es del total de jugaodres
-      url: "https://botoxb-be.herokuapp.com/api/players",
+      url: "https://botoxb-be.herokuapp.com/api/players?results=10",
       headers: {
         "Content-Type": "application/json",
       },
@@ -36,19 +36,17 @@ function TopTres() {
   }, [])
 
 
-
-
-
-
-
   return (
     <header>
       <h1>Top 10 PLayers</h1>
 
       <div className="top-tres">
         
-        {topTresRefactor.map(top => <div key={top._id} className="col">
-          <img src={UserIconTop} alt="" />
+        {topTresRefactor.map(top => 
+        
+        <div key={top._id} className="col">
+          
+          <img src={top.thumbnail} alt="" />
           <p className="name">{top.username}</p>
           <p className="place">{top.place}</p>
           <div className="puntos">
@@ -58,11 +56,10 @@ function TopTres() {
             </p>
           </div>
 
+        </div>
+        
+        )}
 
-
-
-
-        </div>)}
       </div>
     </header>
 

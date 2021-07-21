@@ -91,6 +91,10 @@ section {
     cursor:pointer;
     background-color: transparent;
   border:none;
+
+  @include tablet{
+    bottom: 9rem;
+  }
   @include phone{
     bottom: 1rem;
   }
@@ -440,8 +444,3 @@ button {
   border: none;
 }
 @import "components/Navbar";
-button{
-  cursor:pointer;
-  background-color: transparent;
-border:none;
-}

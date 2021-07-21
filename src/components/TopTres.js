@@ -16,7 +16,7 @@ function TopTres() {
     var config = {
       method: "get",
       //la consulta es del total de jugaodres
-      url: "https://botoxb-be.herokuapp.com/api/players?results=10",
+      url: "https://botoxb-be.herokuapp.com/api/players",
       headers: {
         "Content-Type": "application/json",
       },
@@ -26,7 +26,7 @@ function TopTres() {
       .then(function (response) {
 
         setTop(response.data)
-        console.log(response.data)
+        //console.log(response.data)
         //console.log((JSON.stringify(...response.data)))
 
       })
@@ -49,7 +49,7 @@ function TopTres() {
           
           <img src={top.thumbnail} alt="" />
           <p className="name">{top.username}</p>
-          <p className="place">{top.place}</p>
+          <p className="place">{top.place}1st</p>
           <div className="puntos">
             <p className="puntos-numeros">
               {" "}

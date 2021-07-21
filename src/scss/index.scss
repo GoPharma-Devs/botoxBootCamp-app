@@ -11,9 +11,10 @@ body {
   font-weight: 400;
   line-height: 1.75;
   color: #000000;
-
+  background-position: center;
   background: url("../assets/bg-purple.png") no-repeat center fixed;
   background-size: cover;
+   height: 100%;
 }
 
 p {
@@ -255,35 +256,14 @@ section {
   }
   .top-tres {
     width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    padding: 1rem;
-    &:nth-child(1){
-      box-shadow: 0px 0px 20px rgba(255, 208, 0, 0.747);
-      height: 340px;
-      grid-area: primer;
-      @include phone {
-        height: 280px;
-      }
-    }
-    .segundo-lugar {
-      box-shadow: 0px 0px 20px rgba(160, 160, 160, 0.747);
-      height: 310px;
-      grid-area: segundo;
-      @include phone {
-        height: 280px;
-      }
-    }
-    .tercer-lugar {
-      box-shadow: 0px 0px 20px rgba(150, 86, 34, 0.747);
-      height: 310px;
-      grid-area: tercero;
-      @include phone {
-        height: 280px;
-      }
-    }
+    display: grid;
+      grid-template-areas:
+        "segundo primer tercero";
+   align-items: center;
+   justify-content:space-evenly;
+    
     .col {
+    
       height: 320px;
       width: 100%;
       max-width: 300px;
@@ -291,9 +271,12 @@ section {
       border: 1px solid #fff;
       border-radius: 16px;
       margin-bottom: 2rem;
+      @include tablet{
+        max-width: 210px !important;
+      }
       img {
-        max-width: 150px;
-        padding: 1rem;
+        max-width: 140px;
+        padding: 0.5rem;
       }
 
       p {
@@ -303,12 +286,12 @@ section {
       flex-flow: column;
       align-items: center;
       justify-content: center;
-      padding: 1.2rem;
+      padding: 2rem;
       @include phone {padding:2rem;}
       .name {
         text-align: center;
         font-size: 1.4rem;
-        margin-bottom: 20px !important;
+ 
         font-weight: bold;
         color: #f7981d;
         
@@ -324,7 +307,35 @@ section {
         color: #ffae00;
         font-size: 2rem;
       }
+      &:nth-child(1){
+        box-shadow: 0px 0px 20px rgba(255, 208, 0, 0.747);
+        height: 340px;
+        grid-area: primer;
+        @include phone {
+          height: 280px;
+        }
+      
+    } 
+  
+    &:nth-child(2) {
+      box-shadow: 0px 0px 20px rgba(160, 160, 160, 0.747);
+      height: 310px;
+      grid-area: segundo;
+      @include phone {
+        height: 280px;
+      }
     }
+    &:nth-child(3) {
+      box-shadow: 0px 0px 20px rgba(150, 86, 34, 0.747);
+      height: 310px;
+      grid-area: tercero;
+      @include phone {
+        height: 280px;
+      }
+    }
+  
+  
+  }
 
     @include phone {
       display: grid;

@@ -15,7 +15,7 @@ useEffect(() => {
   var config = {
     method: "get",
     //la consulta es del total de jugaodres
-    url: "https://botoxb-be.herokuapp.com/api/players?results=10",
+    url: "https://botoxb-be.herokuapp.com/api/players",
     headers: {
       "Content-Type": "application/json",
     },

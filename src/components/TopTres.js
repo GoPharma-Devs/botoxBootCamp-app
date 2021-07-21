@@ -37,6 +37,7 @@ function TopTres() {
 
 
   return (
+    
     <header>
       <h1>Top 10 PLayers</h1>
 

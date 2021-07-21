@@ -7,7 +7,7 @@ function RankingGeneral() {
 
 
 const [rank, setRank] = useState([])
-var ranking4ton = rank.slice(3,10)
+var ranking4ton = rank.slice(3,11)
 
 
 useEffect(() => {
@@ -46,7 +46,7 @@ useEffect(() => {
       {ranking4ton.map(rank =>
         <li key={rank._id}>
         <div className="grupo">
-        <p className="place">{rank.place}</p>
+        <p className="place">{rank.place}2nd</p>
           <img src={rank.thumbnail} alt="" />
         </div>
         <p className="name">{rank.username}</p>

@@ -235,6 +235,7 @@ section {
   height: auto !important;
 
   .contenedor {
+    height:auto;
     width: 100%;
     max-width: 1176px;
     margin: auto;
@@ -258,7 +259,7 @@ section {
     align-items: center;
     justify-content: space-evenly;
     padding: 1rem;
-    .primer-lugar {
+    &:nth-child(1){
       box-shadow: 0px 0px 20px rgba(255, 208, 0, 0.747);
       height: 340px;
       grid-area: primer;
@@ -289,7 +290,7 @@ section {
       background-color: rgba(78, 0, 129, 0.493);
       border: 1px solid #fff;
       border-radius: 16px;
-      margin: 1rem;
+      margin-bottom: 2rem;
       img {
         max-width: 150px;
         padding: 1rem;
@@ -302,12 +303,15 @@ section {
       flex-flow: column;
       align-items: center;
       justify-content: center;
-      padding: 0.8rem;
+      padding: 1.2rem;
+      @include phone {padding:2rem;}
       .name {
+        text-align: center;
         font-size: 1.4rem;
         margin-bottom: 20px !important;
         font-weight: bold;
         color: #f7981d;
+        
       }
 
       .place {
@@ -330,12 +334,15 @@ section {
         "tercero";
     }
   }
+
   br {
     @include phone {
       display: none;
     }
   }
+
   .ranking-general {
+    top:-50px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -343,6 +350,8 @@ section {
     flex-flow: column;
     padding: 1rem;
     box-sizing: border-box;
+    height:auto;
+    max-width: 300vh;
     ul {
       height: auto;
       width: 100%;
@@ -371,8 +380,8 @@ section {
           font-size: 1.5rem;
         }
         img {
-          margin-left: 2rem;
-          max-width: 5rem;
+          margin-left: 3rem;
+          max-width: 3rem;
         }
         @include phone {
           img {
@@ -393,21 +402,21 @@ section {
       max-width: 70px;
     }
 
-    @include phone {
-      transform: scale(0.9);
-    }
+   
   }
+  .puntos{margin-left: 1rem !important;}
   .puntos-numeros {
-    border-radius: 20px;
+    border-radius: 10px;
     background-color: #f7981d;
     color: #280229;
-    padding: 0.63rem;
-  
-
+    padding: 0.43rem;
+    text-align: center;
+    
     /* Color de fondo al pasar el cursor */
     box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.3);
 
     @include phone {
+      
       padding: 0.4rem;
       font-size: 0.7rem;
     }
@@ -418,12 +427,7 @@ section {
       font-size: 1.8rem;
     }
   }
-  @include phone {
-    margin-top: 5rem;
-    h1 {
-      font-size: 1.8rem;
-    }
-  }
+  
 }
 .fail-registro {
   a {

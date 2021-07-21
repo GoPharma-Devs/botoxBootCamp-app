@@ -25,7 +25,7 @@ function Ranking() {
         <div className="contenedor">
         {/* TopTres */}
         <TopTres/>
-          <br />
+         
           <RankingGeneral/>
         </div>
       </section>

@@ -7,7 +7,7 @@ function Error() {
         <h1>Error 404</h1>
         <p>Pagína no encontrada</p>
         <br />
-        <Link className="btn-flotante" to="/">Regresar al inicio</Link>
+        <Link className="btn-primario" to="/">Regresar al inicio</Link>
       </div>
     </section>
   )

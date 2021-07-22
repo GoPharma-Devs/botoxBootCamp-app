@@ -1,10 +1,12 @@
-import React from "react";
+import React from 'react';
 import Navbar from "../components/Navbar";
 import Cookies from "universal-cookie";
 import TopTres from "../components/TopTres"
 import RankingGeneral from "../components/RankingGeneral";
 import Fade from 'react-reveal/Fade';
+import Footer from "../components/Footer"
 const cookies = new Cookies();
+
 function Ranking() {
 
     //estado de nombre
@@ -15,7 +17,8 @@ function Ranking() {
   console.log("nombre " + cookies.get("name"));
   
 
-  
+ 
+
 
 
   return (
@@ -30,8 +33,12 @@ function Ranking() {
          
           <RankingGeneral/>
         </div>
+        
       </section>
+     
     </Fade>
+    <br />
+    <Footer/>
       </>
   );
 }

@@ -14,7 +14,12 @@ body {
   background-position: center;
   background: url("../assets/bg-purple.png") no-repeat center fixed;
   background-size: cover;
-   height: 100%;
+  height: 100%;
+  @include phone {
+    height: auto;
+    background: url("../assets/bg-purple-r.png") no-repeat center fixed;
+    background-size: cover;
+  }
 }
 
 p {
@@ -80,26 +85,27 @@ section {
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
+  height: auto;
   flex-flow: column;
   box-sizing: border-box;
 }
 
 .home {
-  button{
+  button {
     position: relative;
-    bottom:-12rem;
-    cursor:pointer;
+    bottom: -12rem;
+    cursor: pointer;
     background-color: transparent;
-  border:none;
+    border: none;
 
-  @include tablet{
-    bottom: 9rem;
+    @include tablet {
+      bottom: 9rem;
+    }
+    @include phone {
+      bottom: -6rem;
+    }
   }
-  @include phone{
-    bottom: 1rem;
-  }
-  } 
   background: url("../assets/bg-purple-soldiers.png") no-repeat center fixed;
   background-size: cover;
   box-shadow: inset 0 0 30px 2px #280229;
@@ -127,13 +133,19 @@ section {
 
     @include phone {
       img {
-        max-width: 120px;
-        margin-top: 5rem;
+        max-width: 100px;
+    margin-top: 15rem;
       }
     }
   }
 
   padding-top: 2rem;
+
+  
+}
+
+.nt{
+  margin-top: 0px !important;
 }
 
 .btn-flotante,
@@ -142,7 +154,7 @@ section {
   align-items: center;
   justify-content: center;
   background-image: url(../assets/logo.png);
-  
+
   text-decoration: none;
   font-size: 16px;
   /* Cambiar el tamaño de la tipografia */
@@ -233,10 +245,11 @@ section {
 
 .ranking {
   margin-top: 1rem;
-  height: auto !important;
+  height: auto;
+  section{height:auto}
 
   .contenedor {
-    height:auto;
+    height: auto;
     width: 100%;
     max-width: 1176px;
     margin: auto;
@@ -257,13 +270,11 @@ section {
   .top-tres {
     width: 100%;
     display: grid;
-      grid-template-areas:
-        "segundo primer tercero";
-   align-items: center;
-   justify-content:space-evenly;
-    
+    grid-template-areas: "segundo primer tercero";
+    align-items: center;
+    justify-content: space-evenly;
+
     .col {
-    
       height: 320px;
       width: 100%;
       max-width: 300px;
@@ -271,11 +282,11 @@ section {
       border: 1px solid #fff;
       border-radius: 16px;
       margin-bottom: 2rem;
-      @include tablet{
+      @include tablet {
         max-width: 210px !important;
       }
       img {
-        max-width: 140px;
+        max-width: 120px;
         padding: 0.5rem;
       }
 
@@ -287,14 +298,15 @@ section {
       align-items: center;
       justify-content: center;
       padding: 2rem;
-      @include phone {padding:2rem;}
+      @include phone {
+        padding: 2rem;
+      }
       .name {
         text-align: center;
         font-size: 1.4rem;
- 
+        line-height: 0.9;
         font-weight: bold;
         color: #f7981d;
-        
       }
 
       .place {
@@ -307,35 +319,32 @@ section {
         color: #ffae00;
         font-size: 2rem;
       }
-      &:nth-child(1){
+      &:nth-child(1) {
         box-shadow: 0px 0px 20px rgba(255, 208, 0, 0.747);
         height: 340px;
         grid-area: primer;
         @include phone {
           height: 280px;
         }
-      
-    } 
-  
-    &:nth-child(2) {
-      box-shadow: 0px 0px 20px rgba(160, 160, 160, 0.747);
-      height: 310px;
-      grid-area: segundo;
-      @include phone {
-        height: 280px;
+      }
+
+      &:nth-child(2) {
+        box-shadow: 0px 0px 20px rgba(160, 160, 160, 0.747);
+        height: 310px;
+        grid-area: segundo;
+        @include phone {
+          height: 280px;
+        }
+      }
+      &:nth-child(3) {
+        box-shadow: 0px 0px 20px rgba(150, 86, 34, 0.747);
+        height: 310px;
+        grid-area: tercero;
+        @include phone {
+          height: 280px;
+        }
       }
     }
-    &:nth-child(3) {
-      box-shadow: 0px 0px 20px rgba(150, 86, 34, 0.747);
-      height: 310px;
-      grid-area: tercero;
-      @include phone {
-        height: 280px;
-      }
-    }
-  
-  
-  }
 
     @include phone {
       display: grid;
@@ -353,7 +362,7 @@ section {
   }
 
   .ranking-general {
-    top:-50px;
+    top: -50px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -361,8 +370,9 @@ section {
     flex-flow: column;
     padding: 1rem;
     box-sizing: border-box;
-    height:auto;
+    height: auto;
     max-width: 300vh;
+    
     ul {
       height: auto;
       width: 100%;
@@ -412,22 +422,24 @@ section {
     ul li img {
       max-width: 70px;
     }
-
-   
   }
-  .puntos{margin-left: 1rem !important;}
+  .puntos {
+    margin-left: 1rem !important;
+    @include phone {
+      margin-left: none !important;
+    }
+  }
   .puntos-numeros {
     border-radius: 10px;
     background-color: #f7981d;
     color: #280229;
     padding: 0.43rem;
     text-align: center;
-    
+
     /* Color de fondo al pasar el cursor */
     box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.3);
 
     @include phone {
-      
       padding: 0.4rem;
       font-size: 0.7rem;
     }
@@ -438,7 +450,6 @@ section {
       font-size: 1.8rem;
     }
   }
-  
 }
 .fail-registro {
   a {
@@ -459,3 +470,64 @@ button {
   border: none;
 }
 @import "components/Navbar";
+
+
+footer{
+  width: 100%;
+  position: absolute;
+margin-top: 7rem;
+padding:3rem 0.3rem;
+font-size: 0.7rem;
+  height: auto;
+  background-color: #31033359;
+ color: #fff;
+  .contenedor{
+    padding-top: 1rem;
+    width: 95%;
+    margin: auto;
+    text-align: left;
+    justify-content: center;
+  }
+
+}
+
+a{margin:auto;}
+.contenedor{
+  box-sizing: border;
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  flex-flow: column;
+  .btn-primario{
+    max-width:400px
+  }
+}
+
+
+small{
+ 
+  font-size:0.7rem;
+  @include phone{
+    text-align: center;
+  }
+}
+
+
+.contenedor-legales{
+  position: absolute;
+  
+  max-width: 740px;
+  bottom: 5px;
+  line-height: 1.1;
+  font-size: 10px;
+  @include phone {
+    width: 100%;
+    position: relative;
+    bottom: -19px !important;
+    small{
+      
+      font-size:0.6rem;
+    }
+
+  }
+}

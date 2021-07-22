@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 //import { Link } from "react-router-dom";
 import Logo from '../assets/logo.png'
 import Butulinica from '../assets/butulinica.png'
@@ -10,7 +10,13 @@ function Home() {
   const handleClick = () => {
     window.open("https://campus.botoxbootcamp.com.mx/acceso.php","_self");
   };
+
+
+
+  
+
   return (
+  
     <Fade>
     <section className="home">
       <div className="contenedor-logo">
@@ -22,7 +28,22 @@ function Home() {
         <img src={Butulinica} alt="Botox-BootCamp 2021 Botox" />
         <img  src={Allergan} alt="Botox-BootCamp 2021" />
       </div>
+
+     < div className="contenedor-legales">
+     <small>MATERIAL DE ENTRENAMIENTO PARA EXCLUSIVO USO INTERNO DE ALLERGAN AESTHETICS – PROHIBIDA SU REPRODUCCIÓN 
+</small>
+<br />
+<small>©2021 Allergan. Todos los derechos reservados. Todas las marcas son propiedad de sus respectivos dueños</small>
+<br />
+<small>BOTOX® No.Reg.119M93 SSA IV</small>
+<br />
+<small>CODIGO VEEVA VAULT xxxxxxx</small>
+<br />
+ <small>Agosto 2021</small>
+      </div>
+
     </section>
+  
     </Fade>
   )
 }

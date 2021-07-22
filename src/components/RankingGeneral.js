@@ -5,13 +5,13 @@ import axios from "axios";
 function RankingGeneral() {
 
 
-
+const [place,setPlace] = useState([])
 const [rank, setRank] = useState([])
 var ranking4ton = rank.slice(3,11)
-
+var place4ton = place.slice(4,11)
 
 useEffect(() => {
-
+ 
   var config = {
     method: "get",
     //la consulta es del total de jugaodres
@@ -27,15 +27,21 @@ useEffect(() => {
       setRank(response.data)
       console.log(response.data)
       //console.log((JSON.stringify(...response.data)))
+      var arr = response.data;
 
+     var lugar = (Object.keys(arr))
+     setPlace(lugar)
     })
     .catch(function (error) {
       console.log(error);
     });
 }, [])
 
-
-
+console.log(place)
+if (place === 0){
+  console.log("numero cero")
+  console.log(place)
+}
 
 
 
@@ -47,7 +53,7 @@ useEffect(() => {
       {ranking4ton.map(rank =>
         <li key={rank._id}>
         <div className="grupo">
-        <p className="place">{rank.place}2nd</p>
+        <p className="place">{place4ton}2nd </p>
           <img src={rank.thumbnail} alt="" />
         </div>
         <p className="name">{rank.username}</p>

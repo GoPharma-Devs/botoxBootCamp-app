@@ -22,6 +22,7 @@ function Routes() {
         <Route exact path="/ranking" component={Ranking} />
         <Route component={Error} />
       </Switch>
+      
     </Router>
   );
 }

@@ -5,11 +5,11 @@ import axios from "axios";
 function TopTres() {
 
 
- 
+
 
   const [top, setTop] = useState([])
   //se pintan solo tres jugadores
-  var topTresRefactor = top.slice(0,3)
+  var topTresRefactor = top.slice(0, 3)
 
   useEffect(() => {
 
@@ -37,28 +37,28 @@ function TopTres() {
 
 
   return (
-    
+
     <header>
       <h1>Top 10 PLayers</h1>
 
       <div className="top-tres">
-        
-        {topTresRefactor.map(top => 
-        
-        <div key={top._id} className="col">
-          
-          <img src={top.thumbnail} alt="" />
-          <p className="name">{top.username}</p>
-          <p className="place">{top.place}1st</p>
-          <div className="puntos">
-            <p className="puntos-numeros">
-              {" "}
-              <span>{top.score} PUNTOS</span>
-            </p>
+
+        {topTresRefactor.map(top =>
+
+          <div key={top._id} className="col">
+
+            <img src={top.thumbnail} alt="" />
+            <p className="name">{top.username}</p>
+            <p className="place">{top.place}1st</p>
+            <div className="puntos">
+              <p className="puntos-numeros">
+                {" "}
+                <span>{top.score} PUNTOS</span>
+              </p>
+            </div>
+
           </div>
 
-        </div>
-        
         )}
 
       </div>

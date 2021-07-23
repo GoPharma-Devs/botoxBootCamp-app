@@ -5,20 +5,20 @@ function Footer() {
     <Zoom bottom>
       <footer >
 
-      < div className="contenedor">
-     <small>MATERIAL DE ENTRENAMIENTO PARA EXCLUSIVO USO INTERNO DE ALLERGAN AESTHETICS – PROHIBIDA SU REPRODUCCIÓN 
-</small>
-<br />
-<small>©2021 Allergan. Todos los derechos reservados. Todas las marcas son propiedad de sus respectivos dueños</small>
-<br />
-<small>BOTOX® No.Reg.119M93 SSA IV</small>
-<br />
-<small>CODIGO VEEVA VAULT xxxxxxx</small>
-<br />
- <small>Agosto 2021</small>
-      </div>
+        < div className="contenedor">
+          <small>MATERIAL DE ENTRENAMIENTO PARA EXCLUSIVO USO INTERNO DE ALLERGAN AESTHETICS – PROHIBIDA SU REPRODUCCIÓN
+          </small>
+          <br />
+          <small>©2021 Allergan. Todos los derechos reservados. Todas las marcas son propiedad de sus respectivos dueños</small>
+          <br />
+          <small>BOTOX® No.Reg.119M93 SSA IV</small>
+          <br />
+          <small>CODIGO VEEVA VAULT xxxxxxx</small>
+          <br />
+          <small>Agosto 2021</small>
+        </div>
 
-</footer>
+      </footer>
     </Zoom>
   )
 }

@@ -134,17 +134,15 @@ section {
     @include phone {
       img {
         max-width: 100px;
-    margin-top: 15rem;
+        margin-top: 15rem;
       }
     }
   }
 
   padding-top: 2rem;
-
-  
 }
 
-.nt{
+.nt {
   margin-top: 0px !important;
 }
 
@@ -246,7 +244,9 @@ section {
 .ranking {
   margin-top: 1rem;
   height: auto;
-  section{height:auto}
+  section {
+    height: auto;
+  }
 
   .contenedor {
     height: auto;
@@ -372,7 +372,7 @@ section {
     box-sizing: border-box;
     height: auto;
     max-width: 300vh;
-    
+
     ul {
       height: auto;
       width: 100%;
@@ -471,51 +471,48 @@ button {
 }
 @import "components/Navbar";
 
-
-footer{
+footer {
   width: 100%;
   position: absolute;
-margin-top: 7rem;
-padding:3rem 0.3rem;
-font-size: 0.7rem;
+  margin-top: 7rem;
+  padding: 3rem 0.3rem;
+  font-size: 0.7rem;
   height: auto;
   background-color: #31033359;
- color: #fff;
-  .contenedor{
+  color: #fff;
+  .contenedor {
     padding-top: 1rem;
     width: 95%;
     margin: auto;
     text-align: left;
     justify-content: center;
   }
-
 }
 
-a{margin:auto;}
-.contenedor{
+a {
+  margin: auto;
+}
+.contenedor {
   box-sizing: border;
   display: flex;
-  align-items:center;
+  align-items: center;
   justify-content: center;
   flex-flow: column;
-  .btn-primario{
-    max-width:400px
+  .btn-primario {
+    max-width: 400px;
   }
 }
 
-
-small{
- 
-  font-size:0.7rem;
-  @include phone{
+small {
+  font-size: 0.7rem;
+  @include phone {
     text-align: center;
   }
 }
 
-
-.contenedor-legales{
+.contenedor-legales {
   position: absolute;
-  
+
   max-width: 740px;
   bottom: 5px;
   line-height: 1.1;
@@ -524,10 +521,8 @@ small{
     width: 100%;
     position: relative;
     bottom: -19px !important;
-    small{
-      
-      font-size:0.6rem;
+    small {
+      font-size: 0.6rem;
     }
-
   }
 }

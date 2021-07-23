@@ -1,28 +1,17 @@
-import React from 'react';
+import React from "react";
 import Navbar from "../components/Navbar";
-import Cookies from "universal-cookie";
-import TopTres from "../components/TopTres"
+import TopTres from "../components/TopTres";
 import RankingGeneral from "../components/RankingGeneral";
-import Fade from 'react-reveal/Fade';
-import Footer from "../components/Footer"
-const cookies = new Cookies();
+import Fade from "react-reveal/Fade";
+import Footer from "../components/Footer";
+
 
 function Ranking() {
-
   //estado de nombre
 
-
-  //const [place, setPlace] = [1,2,3]
-  console.log("message " + cookies.get("message"));
-  console.log("nombre " + cookies.get("name"));
-
-
-
-
-
+  
 
   return (
-
     <>
       <Navbar />
       <Fade>
@@ -33,9 +22,7 @@ function Ranking() {
 
             <RankingGeneral />
           </div>
-
         </section>
-
       </Fade>
       <br />
       <Footer />

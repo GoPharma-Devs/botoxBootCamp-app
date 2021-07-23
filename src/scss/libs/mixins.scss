@@ -8,7 +8,7 @@
 @mixin tablet {
   @media only screen and (max-width: 952px) {
     @content;
-    
+
   }
 }
 
@@ -21,7 +21,7 @@
 @mixin laptop {
   @media only screen and (max-width: 1324px) {
     @content;
-    
+
   }
 }
 
@@ -30,6 +30,7 @@
     @content;
   }
 }
+
 @mixin mobile-landscape-only {
   @media only screen and (min-width: $mq-mobile-portrait + 1) and (max-width: $mq-mobile-landscape) {
     @content;
@@ -38,10 +39,11 @@
 
 
 
-@mixin scrollbars($size, $foreground-color, $background-color: mix($foreground-color, white,  50%)) {
+@mixin scrollbars($size, $foreground-color, $background-color: mix($foreground-color, white, 50%)) {
+
   // For Google Chrome
   &::-webkit-scrollbar {
-    width:  $size;
+    width: $size;
     height: $size;
   }
 

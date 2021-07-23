@@ -50,9 +50,7 @@ function TopTres() {
     else if (i===3){
       return i = "⭐️ "
     }
-    if  (i>=4){
-      return i = "⭐️k "
-    }
+     
 
   }
 

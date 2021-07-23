@@ -5,10 +5,10 @@ import axios from "axios";
 function RankingGeneral() {
 
 
-const [place,setPlace] = useState([])
+
 const [rank, setRank] = useState([])
 var ranking4ton = rank.slice(3,100)
-var place4ton = place.slice(4,10)
+
 
 useEffect(() => {
  
@@ -25,12 +25,10 @@ useEffect(() => {
     .then(function (response) {
 
       setRank(response.data)
-      console.log(response.data)
+      //console.log(response.data)
       //console.log((JSON.stringify(...response.data)))
-      var arr = response.data;
-
-     var lugar = (Object.keys(arr))
-     setPlace(lugar)
+      
+     
     })
     .catch(function (error) {
       console.log(error);
@@ -53,7 +51,7 @@ function ordinal_suffix_of(i) {
 }
 
 
-console.log(`lugares ranking general: ${place4ton}`)
+
 
 
   return (

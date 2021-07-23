@@ -1,20 +1,25 @@
 @import "libs/mixins";
 @import url("https://fonts.googleapis.com/css?family=Roboto:400");
 
-html {
-  font-size: 100%;
-} /*16px*/
+@import url('https://fonts.googleapis.com/css?family=Bebas+Neue:400');
+
+html {font-size: 100%;} /*16px*/
+
+
+/*16px*/
 
 body {
   background: white;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Bebas Neue', sans-serif;
   font-weight: 400;
   line-height: 1.75;
+  color: #000000;
   color: #000000;
   background-position: center;
   background: url("../assets/bg-purple.png") no-repeat center fixed;
   background-size: cover;
   height: 100%;
+
   @include phone {
     height: auto;
     background: url("../assets/bg-purple-r.png") no-repeat center fixed;
@@ -24,6 +29,7 @@ body {
 
 p {
   margin-bottom: 1rem;
+  font-family: "Roboto", sans-serif;
 }
 
 h1,
@@ -32,7 +38,8 @@ h3,
 h4,
 h5 {
   margin: 3rem 0 1.38rem;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Bebas Neue', sans-serif;
+
   font-weight: 400;
   line-height: 1.3;
 }
@@ -60,8 +67,10 @@ h5 {
 
 small,
 .text_small {
-  font-size: 0.8rem;
+  font-family: "Roboto", sans-serif;
+  font-size: 0.5rem !important;
 }
+
 * {
   margin: 0;
   padding: 0;
@@ -72,13 +81,16 @@ small,
   width: 35vw;
 
   margin: auto;
+
   @include tablet {
     width: 85vw;
   }
 }
+
 h1 {
   text-transform: uppercase;
 }
+
 section {
   color: white;
   display: flex;
@@ -102,10 +114,12 @@ section {
     @include tablet {
       bottom: 9rem;
     }
+
     @include phone {
       bottom: -6rem;
     }
   }
+
   background: url("../assets/bg-purple-soldiers.png") no-repeat center fixed;
   background-size: cover;
   box-shadow: inset 0 0 30px 2px #280229;
@@ -121,6 +135,7 @@ section {
     align-items: center;
     justify-content: center;
   }
+
   .contenedor-patrocinadores {
     width: 100%;
     display: flex;
@@ -172,6 +187,7 @@ section {
   /* Relleno del boton */
   position: absolute;
   bottom: 4rem;
+
   img {
     width: 100%;
     max-width: 200px;
@@ -212,29 +228,35 @@ section {
     max-width: 320px;
     border-radius: 16px;
     padding: 2rem 2rem;
+
     .formulario {
       display: flex;
       flex-flow: column;
       align-items: center;
       justify-content: center;
       width: 100%;
+
       .form-grupo {
         font-weight: bold;
         text-transform: uppercase;
+
         label {
           margin-bottom: 0.6rem;
           font-family: Arial, Helvetica, sans-serif;
         }
+
         input {
           padding: 0.6rem;
           font-size: 0.7rem;
         }
+
         padding-bottom: 1rem;
         flex-flow: column;
         display: flex;
         width: 100%;
       }
     }
+
     @include phone {
       margin-top: 11rem;
     }
@@ -244,6 +266,7 @@ section {
 .ranking {
   margin-top: 1rem;
   height: auto;
+
   section {
     height: auto;
   }
@@ -258,6 +281,7 @@ section {
     top: 140px;
     position: relative;
   }
+
   header {
     text-align: center;
     display: flex;
@@ -267,6 +291,7 @@ section {
     margin-bottom: 1.2rem;
     width: 100%;
   }
+
   .top-tres {
     width: 100%;
     display: grid;
@@ -282,9 +307,11 @@ section {
       border: 1px solid #fff;
       border-radius: 16px;
       margin-bottom: 2rem;
+
       @include tablet {
         max-width: 210px !important;
       }
+
       img {
         max-width: 120px;
         padding: 0.5rem;
@@ -293,14 +320,17 @@ section {
       p {
         margin: 0 !important;
       }
+
       display: flex;
       flex-flow: column;
       align-items: center;
       justify-content: center;
       padding: 2rem;
+
       @include phone {
         padding: 2rem;
       }
+
       .name {
         text-align: center;
         font-size: 1.4rem;
@@ -313,17 +343,19 @@ section {
         color: rgb(255, 255, 255);
         font-size: 1.6rem;
         font-weight: bolder;
-       
+
       }
 
       .first {
         color: #ffae00;
         font-size: 2rem;
       }
+
       &:nth-child(1) {
         box-shadow: 0px 0px 20px rgba(255, 208, 0, 0.747);
         height: 340px;
         grid-area: primer;
+
         @include phone {
           height: 280px;
         }
@@ -333,14 +365,17 @@ section {
         box-shadow: 0px 0px 20px rgba(160, 160, 160, 0.747);
         height: 310px;
         grid-area: segundo;
+
         @include phone {
           height: 280px;
         }
       }
+
       &:nth-child(3) {
         box-shadow: 0px 0px 20px rgba(150, 86, 34, 0.747);
         height: 310px;
         grid-area: tercero;
+
         @include phone {
           height: 280px;
         }
@@ -395,42 +430,52 @@ section {
 
       .grupo {
         display: flex;
-        width: 15%;
+        width: 20%;
         align-items: center;
         justify-content: center;
+
         .place {
-          font-size: 1.5rem;
-          display: ruby;
+          font-size: 1.2rem;
+          display: row !important;
         }
+
         img {
           margin-left: 3rem;
           max-width: 3rem;
         }
+
         @include phone {
           img {
             margin-left: 15px;
           }
+
           width: 50%;
           align-items: space-between;
         }
       }
+
       p {
         margin: 0px !important;
       }
+
       display: flex;
       align-items: center;
       justify-content: space-evenly;
     }
+
     ul li img {
       max-width: 70px;
     }
   }
+
   .puntos {
     margin-left: 1rem !important;
+
     @include phone {
       margin-left: none !important;
     }
   }
+
   .puntos-numeros {
     border-radius: 10px;
     background-color: #f7981d;
@@ -446,13 +491,16 @@ section {
       font-size: 0.7rem;
     }
   }
+
   @include tablet {
     margin-top: 10rem;
+
     h1 {
       font-size: 1.8rem;
     }
   }
 }
+
 .fail-registro {
   a {
     text-decoration: none;
@@ -466,11 +514,13 @@ section {
   display: flex;
   align-items: center;
 }
+
 button {
   cursor: pointer;
   background-color: transparent;
   border: none;
 }
+
 @import "components/Navbar";
 
 footer {
@@ -482,6 +532,7 @@ footer {
   height: auto;
   background-color: #31033359;
   color: #fff;
+
   .contenedor {
     padding-top: 1rem;
     width: 95%;
@@ -494,12 +545,14 @@ footer {
 a {
   margin: auto;
 }
+
 .contenedor {
   box-sizing: border;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-flow: column;
+
   .btn-primario {
     max-width: 400px;
   }
@@ -507,6 +560,7 @@ a {
 
 small {
   font-size: 0.7rem;
+
   @include phone {
     text-align: center;
   }
@@ -516,13 +570,15 @@ small {
   position: absolute;
 
   max-width: 740px;
-  bottom: 5px;
+  bottom: 15px;
   line-height: 1.1;
   font-size: 10px;
+
   @include phone {
     width: 100%;
     position: relative;
     bottom: -19px !important;
+
     small {
       font-size: 0.6rem;
     }

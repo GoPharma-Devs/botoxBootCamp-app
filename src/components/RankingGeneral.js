@@ -51,54 +51,48 @@ function ordinal_suffix_of(i) {
 }
 
 
+  function putEmoji(i) {
+    if (i <= 10) {
+      return (i = "✨");
+    } else if (i <= 20) {
+      return (i = "🐝");
+    } else if (i <= 30) {
+      return (i = "🐸");
+    } else if (i <= 40) {
+      return (i = "🤨");
+    } else if (i <= 50) {
+      return (i = "🙀");
+    }
+  }
 
-
+  
+  //console.log(`lugares ranking general: ${place4ton}`)
 
   return (
     <Zoom>
-    <div className="ranking-general">
-    <ul>
+      <div className="ranking-general">
+        <ul>
+          {ranking4ton.map((rank, index) => (
+            <li key={rank._id}>
+              <div className="grupo">
+                <p>{putEmoji(index + 4)}</p>
+                <p className="place">{ordinal_suffix_of(index + 4)}</p>
+                <img src={rank.thumbnail} alt="" />
+              </div>
+              <p className="name">{rank.username}</p>
 
-      {ranking4ton.map((rank,index) =>
-        <li key={rank._id}>
-        <div className="grupo">
-        <p className="place">{ordinal_suffix_of(index+4)}</p>
-          <img src={rank.thumbnail} alt="" />
-        </div>
-        <p className="name">{rank.username}</p>
-
-        <div className="puntos">
-          <p className="puntos-numeros">
-            {" "}
-            <span>{rank.score} PUNTOS</span>
-          </p>
-        </div>
-      </li>
-        
-        
-        
-        )}
-{/* 
-      <li>
-        <div className="grupo">
-          <p className="place">4th</p>
-          <img src={UserIcon} alt="" />
-        </div>
-        <p className="name">FS LM</p>
-
-        <div className="puntos">
-          <p className="puntos-numeros">
-            {" "}
-            <span>XXX PUNTOS</span>
-          </p>
-        </div>
-      </li> */}
-
-      
-    </ul>
-  </div>
-  </Zoom>
-  )
+              <div className="puntos">
+                <p className="puntos-numeros">
+                  {" "}
+                  <span>{rank.score} PUNTOS</span>
+                </p>
+              </div>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </Zoom>
+  );
 }
 
 export default RankingGeneral

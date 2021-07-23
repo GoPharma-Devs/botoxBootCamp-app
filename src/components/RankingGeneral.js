@@ -43,6 +43,7 @@ if (place === 0){
   console.log(place)
 }
 
+console.log(place4ton)
 
 
   return (
@@ -53,7 +54,7 @@ if (place === 0){
       {ranking4ton.map(rank =>
         <li key={rank._id}>
         <div className="grupo">
-        <p className="place">{place4ton}2nd </p>
+        <p className="place">2nd </p>
           <img src={rank.thumbnail} alt="" />
         </div>
         <p className="name">{rank.username}</p>

@@ -34,7 +34,20 @@ function TopTres() {
         console.log(error);
       });
   }, [])
-
+  function ordinal_suffix_of(i) {
+    var j = i % 10,
+        k = i % 100;
+    if (j === 1 && k !== 11) {
+        return i + "st";
+    }
+    if (j === 2 && k !== 12) {
+        return i + "nd";
+    }
+    if (j === 3 && k !== 13) {
+        return i + "rd";
+    }
+    return i + "th";
+  }
 
   return (
 
@@ -43,13 +56,13 @@ function TopTres() {
 
       <div className="top-tres">
 
-        {topTresRefactor.map(top =>
+        {topTresRefactor.map((top,index) =>
 
           <div key={top._id} className="col">
 
             <img src={top.thumbnail} alt="" />
             <p className="name">{top.username}</p>
-            <p className="place">{top.place}1st</p>
+            <p className="place">{ordinal_suffix_of(index+1)}</p>
             <div className="puntos">
               <p className="puntos-numeros">
                 {" "}

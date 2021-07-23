@@ -7,8 +7,8 @@ function RankingGeneral() {
 
 const [place,setPlace] = useState([])
 const [rank, setRank] = useState([])
-var ranking4ton = rank.slice(3,11)
-var place4ton = place.slice(4,11)
+var ranking4ton = rank.slice(3,100)
+var place4ton = place.slice(4,10)
 
 useEffect(() => {
  
@@ -37,13 +37,23 @@ useEffect(() => {
     });
 }, [])
 
-console.log(place)
-if (place === 0){
-  console.log("numero cero")
-  console.log(place)
+function ordinal_suffix_of(i) {
+  var j = i % 10,
+      k = i % 100;
+  if (j === 1 && k !== 11) {
+      return i + "st";
+  }
+  if (j === 2 && k !== 12) {
+      return i + "nd";
+  }
+  if (j === 3 && k !== 13) {
+      return i + "rd";
+  }
+  return i + "th";
 }
 
-console.log(place4ton)
+
+console.log(`lugares ranking general: ${place4ton}`)
 
 
   return (
@@ -51,10 +61,10 @@ console.log(place4ton)
     <div className="ranking-general">
     <ul>
 
-      {ranking4ton.map(rank =>
+      {ranking4ton.map((rank,index) =>
         <li key={rank._id}>
         <div className="grupo">
-        <p className="place">2nd </p>
+        <p className="place">{ordinal_suffix_of(index+4)}</p>
           <img src={rank.thumbnail} alt="" />
         </div>
         <p className="name">{rank.username}</p>

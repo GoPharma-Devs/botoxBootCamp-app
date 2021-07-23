@@ -13,7 +13,7 @@ function Footer() {
           <br />
           <small>BOTOX® No.Reg.119M93 SSA IV</small>
           <br />
-          <small>CODIGO VEEVA VAULT xxxxxxx</small>
+          <small>CODIGO VEEVA VAULT MX-BCT-2150063</small>
           <br />
           <small>Agosto 2021</small>
         </div>

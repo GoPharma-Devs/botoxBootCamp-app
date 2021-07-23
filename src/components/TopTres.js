@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-
+import Fade from 'react-reveal/Fade';
 import axios from "axios";
 
 function TopTres() {
@@ -56,7 +56,9 @@ function TopTres() {
 
   return (
     <header>
-      <h1>Top 10 PLayers</h1>
+     <Fade bottom>
+          <h1>Top 10 players</h1>
+        </Fade>
 
       <div className="top-tres">
         {topTresRefactor.map((top, index) => (

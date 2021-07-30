@@ -59,7 +59,7 @@ function TopTres() {
      <Fade bottom>
           <h1>Top 10 players</h1>
         </Fade>
-
+        <Fade bottom>
       <div className="top-tres">
         {topTresRefactor.map((top, index) => (
           <div key={top._id} className="col">
@@ -78,6 +78,7 @@ function TopTres() {
           </div>
         ))}
       </div>
+      </Fade>
     </header>
   );
 }

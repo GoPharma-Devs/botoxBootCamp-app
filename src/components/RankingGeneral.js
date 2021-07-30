@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import Zoom from 'react-reveal/Zoom';
+import Fade from 'react-reveal/Zoom';
 import axios from "axios";
 
 function RankingGeneral() {
@@ -57,10 +57,12 @@ function ordinal_suffix_of(i) {
   //console.log(`lugares ranking general: ${place4ton}`)
 
   return (
-    <Zoom>
+    
       <div className="ranking-general">
         <ul>
+          
           {ranking4ton.map((rank, index) => (
+            <Fade bottom>
             <li key={rank._id}>
               <div className="grupo">
                 
@@ -76,10 +78,11 @@ function ordinal_suffix_of(i) {
                 </p>
               </div>
             </li>
+            </Fade>
           ))}
         </ul>
       </div>
-    </Zoom>
+    
   );
 }
 

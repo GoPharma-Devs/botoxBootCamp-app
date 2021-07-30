@@ -27,8 +27,12 @@ body {
 
   @include phone {
     height: auto;
-    background: url("../assets/bg-purple-r.png") no-repeat center fixed !important;
+    background: url("../assets/bg-purple-r.png") ;
     background-size: cover;
+  background-origin: border-box;
+  background-position: center;
+  background-attachment: fixed;
+  height: 100vh;
   }
 }
 

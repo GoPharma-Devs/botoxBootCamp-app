@@ -23,7 +23,7 @@ body {
   background-origin: border-box;
   background-position: center;
   background-attachment: fixed;
-  height: 100%;
+  height: 100vh;
 
   @include phone {
     height: auto;

@@ -40,19 +40,7 @@ function RankingGeneral() {
     return i + " th";
   }
 
-  function putEmoji(i) {
-    if (i <= 10) {
-      return (i = "✨");
-    } else if (i <= 20) {
-      return (i = "🐝");
-    } else if (i <= 30) {
-      return (i = "🐸");
-    } else if (i <= 40) {
-      return (i = "🤨");
-    } else if (i <= 50) {
-      return (i = "🙀");
-    }
-  }
+ 
 
   
   //console.log(`lugares ranking general: ${place4ton}`)
@@ -64,7 +52,7 @@ function RankingGeneral() {
           {ranking4ton.map((rank, index) => (
             <li key={rank._id}>
               <div className="grupo">
-                <p>{putEmoji(index + 4)}</p>
+               
                 <p className="place">{ordinal_suffix_of(index + 4)}</p>
                 <img src={rank.thumbnail} alt="" />
               </div>
